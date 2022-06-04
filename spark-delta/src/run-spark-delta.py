@@ -11,12 +11,15 @@ from pyspark.sql.functions import *
 from delta import * 
 from delta.tables import DeltaTable
 import shutil
+import configparser
 
 import logging
 logging.basicConfig(level="INFO")
 logger = logging.getLogger(__name__)
 logger.info("This is an INFO message on the root logger.")
 
+config = configparser.ConfigParser()
+config.read('config.cfg.template', encoding='utf-8-sig')
 
 container_name       =  config['AZURE']['CONTAINER_NAME']
 sink_container_name  =  config['AZURE']['SINK_CONTAINER_NAME']

@@ -6,12 +6,12 @@ function log {
   return 0
 }
 
-export ACR_NAME = docaiacr      
-export AZ_CLIENT_ID = XXXX      # Update with client ID
-export AZ_CLIENT_SECRET = XXXX  # Update with client secret
-export AZ_TENANT_ID = XXXX      # Update with tenant ID
-export IMAGE_NAME = data-loader
-export IMAGE_TAG = v1
+export ACR_NAME=docaiacr      
+export AZ_CLIENT_ID=XXXX      # Update with client ID
+export AZ_CLIENT_SECRET=XXXX  # Update with client secret
+export AZ_TENANT_ID=XXXX      # Update with tenant ID
+export IMAGE_NAME=data-loader
+export IMAGE_TAG=v1
 
 # Login to Azure Account
 log '✅ Authenticating with Azure...'
