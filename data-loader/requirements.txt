@@ -1,0 +1,8 @@
+pandas
+numpy
+requests
+click
+bs4
+html-table-parser-python3
+azure-storage-file-datalake
+lxml

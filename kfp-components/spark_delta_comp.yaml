@@ -1,0 +1,6 @@
+name: Run Spark Job
+description: Create docai spark app in the same k8s cluster for Spark-operator
+implementation:
+  container:
+    image: docaiacr.azurecr.io/spark-job:v1
+    command: [ "python3","create_spark_app.py" ]
