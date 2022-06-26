@@ -1,7 +1,0 @@
-name: data_loader
-description: Download 10k files to Azure Datalake Storage
-
-implementation:
-  container:
-    image: docaiacr.azurecr.io/data-loader:v1
-    command: [ "/venv/bin/python3", "src.download_10k_raw" ]
